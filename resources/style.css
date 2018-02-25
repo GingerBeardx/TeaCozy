@@ -11,6 +11,14 @@ body {
   opacity: 0.9;
 }
 
+div {
+  display: block;
+}
+
+h2, h3, h4 {
+  margin: 0;
+  padding: 10px;
+}
 /* header style */
 header {
   display: flex;
@@ -21,17 +29,44 @@ header {
   height: 69px;
   border-bottom: 1px solid seashell;
   background-color: black;
-  z-index: 1;
+  z-index: 10;
 }
 
 .logo img {
+  display: flex;
+  align-items: center;
   height: 50px;
   margin-left: 10px;
 }
 
 nav a {
+  display: inline-flex;
   color: seashell;
   text-decoration: underline;
   padding-left: 20px;
   margin-right: 10px;
+}
+
+/* mission style */
+.mission {
+  padding-top: 72px;
+}
+
+.mission-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 1200px;
+  margin: 0 auto 38px auto; /* centers image on page */
+  background-image: url("../resources/images/img-mission-background.jpg");
+}
+
+.mission .content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
 }
