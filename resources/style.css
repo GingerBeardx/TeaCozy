@@ -13,13 +13,17 @@ body {
 
 div {
   display: block;
-  border: 1px white solid;
 }
 
 h2, h3, h4 {
   margin: 0;
   padding: 10px;
 }
+
+a:hover {
+  color: seagreen;
+}
+
 /* header style */
 header {
   display: flex;
@@ -110,7 +114,7 @@ nav a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 500px;
+  height: 500px; /* This size does not show as much of the coffee cup in the redline */
   width: 1200px;
 }
 
@@ -134,4 +138,23 @@ nav a {
   margin-top: 5px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+/* footer style */
+.contact {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact a {
+  color: seashell;
+  text-decoration: none;
+}
+
+#copyright {
+  margin-left: 20px;
+  margin-bottom: 50px;
 }
